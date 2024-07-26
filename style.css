@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #edf2f4;
+}
+
+.container-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(#d90429, #acaeed);
+  color: white;
+  border-radius: 50px;
+  margin: 20px;
+  height: auto;
+}
+
+.container-header img {
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.title-accueil {
+  font-size: 1.5em;
+  text-align: center;
+  flex-grow: 1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+nav li:hover {
+  color: #3623c5;
+  font-weight: bold;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.container-moi {
+  order: 2;
+}
+
+.container-moi img {
+  width: 100px;
+}
+
+.container-info {
+  order: 1;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .container-header {
+    flex-direction: row;
+    height: 200px;
+    gap: 180px;
+  }
+
+  .container-header img {
+    width: 150px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .container-main {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .container-moi {
+    margin-right: 100px;
+    order: 1;
+  }
+
+  .container-moi img {
+    width: 150px;
+  }
+
+  .container-info {
+    order: 2;
+    text-align: left;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  .container-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-moi img {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container-header img {
+    width: 80px;
+  }
+
+  .title-accueil {
+    font-size: 1.2em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container-moi img {
+    width: 80px;
+  }
+}
