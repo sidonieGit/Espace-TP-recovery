@@ -1,0 +1,29 @@
+body {
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-top: 140px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.link-underline-hover:hover {
+  text-decoration: dashed !important;
+}
+
+.heading-sec__main {
+  letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 56%;
+  }
+  .logo {
+    width: 40px;
+    height: 35px;
+  }
+}
