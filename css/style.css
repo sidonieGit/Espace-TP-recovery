@@ -10,7 +10,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.link-underline-hover:hover {
+.nav .link-underline-hover:hover {
   text-decoration: dashed !important;
 }
 
